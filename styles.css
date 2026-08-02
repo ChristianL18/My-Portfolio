@@ -714,6 +714,26 @@ h1, h2, h3, h4 {
     transform: scale(1.25) translateY(-4px);
 }
 
+.skill-tags .skill-tag-text {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.skill-tags .skill-tag-text i {
+    font-size: 1.5rem;
+}
+
+.skill-tags .skill-tag-text:hover {
+    transform: scale(1.15) translateY(-4px);
+    color: var(--text);
+}
+
 /* ============ Projects ============ */
 .projects-grid {
     display: grid;
