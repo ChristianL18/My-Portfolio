@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Christian Luis V. Gutierrez - Backend & Frontend Developer">
+    <title>Christian Luis V. Gutierrez | Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">Christian<span class="gradient-text">.dev</span></a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="#contact" class="nav-cta">Let's Talk</a>
+            <div class="hamburger" id="hamburger" aria-label="Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-grid-bg"></div>
+            <div class="hero-blob hero-blob-1"></div>
+            <div class="hero-blob hero-blob-2"></div>
+
+            <div class="hero-content">
+                <p class="hero-greeting reveal">Hello there, I'm</p>
+                <h1 class="hero-title reveal">Christian Luis<br><span class="gradient-text">V. Gutierrez</span></h1>
+                <p class="hero-role reveal"><span id="typed-text"></span><span class="typing-cursor">|</span></p>
+                <p class="hero-description reveal">Creating elegant digital experiences with clean code and thoughtful design. From pixel-perfect frontends to reliable backends.</p>
+                <div class="hero-actions reveal">
+                    <a href="#projects" class="btn btn-primary">View My Work <i class="fas fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                </div>
+                <div class="hero-socials reveal">
+                    <a href="https://github.com/ChristianL18" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:christianluisgutierrez@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <div class="hero-profile reveal">
+                <div class="profile-ring">
+                    <img src="profile.jpg" alt="Christian Luis V. Gutierrez">
+                </div>
+                <div class="floating-badge badge-1"><i class="fab fa-python"></i> Python</div>
+                <div class="floating-badge badge-2"><i class="devicon-javascript-plain colored"></i> JavaScript</div>
+                <div class="floating-badge badge-3"><i class="fas fa-database"></i> MySQL</div>
+            </div>
+
+            <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <section id="about" class="section about">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="section-tag">About Me</span>
+                    <h2 class="section-title">Turning ideas into <span class="gradient-text">reality</span></h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text reveal">
+                        <p>I'm a <strong>minimalist frontend developer</strong> with a passion for clean, elegant code and thoughtful design. I specialize in creating beautiful, functional digital experiences with a focus on simplicity and user experience.</p>
+                        <p>Currently expanding my skills with <strong>backend development</strong> and learning Python to enhance my technical capabilities and broaden my development expertise.</p>
+                        <div class="about-info">
+                            <div class="info-item">
+                                <span class="info-icon"><i class="fas fa-user"></i></span>
+                                <div>
+                                    <span class="info-label">Name</span>
+                                    <span class="info-value">Christian Luis V. Gutierrez</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-icon"><i class="fas fa-map-marker-alt"></i></span>
+                                <div>
+                                    <span class="info-label">Location</span>
+                                    <span class="info-value">Camputhaw Cebu City Philippines</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-icon"><i class="fas fa-code"></i></span>
+                                <div>
+                                    <span class="info-label">Focus</span>
+                                    <span class="info-value">Full-Stack Development</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-stats reveal">
+                        <div class="stat-card">
+                            <span class="stat-number gradient-text">2+</span>
+                            <span class="stat-label">Years Coding</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number gradient-text">2+</span>
+                            <span class="stat-label">Featured Projects</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number gradient-text">6+</span>
+                            <span class="stat-label">Technologies</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section skills">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="section-tag">Skills</span>
+                    <h2 class="section-title">Tech stack & <span class="gradient-text">tools</span></h2>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-card reveal">
+                        <div class="skill-card-header">
+                            <i class="fas fa-paint-brush skill-card-icon"></i>
+                            <h3>Frontend</h3>
+                        </div>
+                        <div class="skill-bar-group">
+                            <div class="skill-bar-item">
+                                <div class="skill-bar-top"><span>HTML5</span><span class="skill-percent" data-value="85">0%</span></div>
+                                <div class="skill-bar"><div class="skill-bar-fill" data-fill="85%"></div></div>
+                            </div>
+                            <div class="skill-bar-item">
+                                <div class="skill-bar-top"><span>CSS3</span><span class="skill-percent" data-value="80">0%</span></div>
+                                <div class="skill-bar"><div class="skill-bar-fill" data-fill="80%"></div></div>
+                            </div>
+                            <div class="skill-bar-item">
+                                <div class="skill-bar-top"><span>JavaScript</span><span class="skill-percent" data-value="75">0%</span></div>
+                                <div class="skill-bar"><div class="skill-bar-fill" data-fill="75%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card reveal">
+                        <div class="skill-card-header">
+                            <i class="fas fa-server skill-card-icon"></i>
+                            <h3>Backend & Databases</h3>
+                        </div>
+                        <div class="skill-bar-group">
+                            <div class="skill-bar-item">
+                                <div class="skill-bar-top"><span>Python</span><span class="skill-percent" data-value="60">0%</span></div>
+                                <div class="skill-bar"><div class="skill-bar-fill" data-fill="60%"></div></div>
+                            </div>
+                            <div class="skill-bar-item">
+                                <div class="skill-bar-top"><span>C#</span><span class="skill-percent" data-value="55">0%</span></div>
+                                <div class="skill-bar"><div class="skill-bar-fill" data-fill="55%"></div></div>
+                            </div>
+                            <div class="skill-bar-item">
+                                <div class="skill-bar-top"><span>C++</span><span class="skill-percent" data-value="50">0%</span></div>
+                                <div class="skill-bar"><div class="skill-bar-fill" data-fill="50%"></div></div>
+                            </div>
+                            <div class="skill-bar-item">
+                                <div class="skill-bar-top"><span>MySQL</span><span class="skill-percent" data-value="65">0%</span></div>
+                                <div class="skill-bar"><div class="skill-bar-fill" data-fill="65%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-tags reveal">
+                    <i class="devicon-html5-plain colored"></i>
+                    <i class="devicon-css3-plain colored"></i>
+                    <i class="devicon-javascript-plain colored"></i>
+                    <i class="devicon-python-plain colored"></i>
+                    <i class="devicon-csharp-line colored"></i>
+                    <i class="devicon-cplusplus-line colored"></i>
+                    <i class="devicon-mysql-plain colored"></i>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section projects">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="section-tag">Projects</span>
+                    <h2 class="section-title">Things I've <span class="gradient-text">built</span></h2>
+                </div>
+
+                <div class="projects-grid">
+                    <div class="project-card reveal">
+                        <div class="project-image">
+                            <img src="https://placehold.co/600x400/111a2e/22d3ee?text=AI+Quiz+Generator&font=roboto" alt="AI Quiz Generator">
+                            <div class="project-overlay">
+                                <a href="https://aiquizgene.vercel.app/" target="_blank" rel="noopener" class="project-cta"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>AI Quiz Generator</h3>
+                            <p>An intelligent quiz application that leverages AI to create, review, and analyze quiz content, built with Python on the frontend and backend.</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>AI</span>
+                                <span>Frontend</span>
+                                <span>Backend</span>
+                            </div>
+                            <a href="https://aiquizgene.vercel.app/" target="_blank" rel="noopener" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="project-card reveal">
+                        <div class="project-image">
+                            <img src="https://placehold.co/600x400/111a2e/6d5cff?text=Sit-in+Monitoring+System&font=roboto" alt="Sit-in Monitoring System">
+                            <div class="project-overlay">
+                                <a href="https://sit-in-monitoring-system-mu.vercel.app/" target="_blank" rel="noopener" class="project-cta"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>CCS Sit-in Monitoring System</h3>
+                            <p>A computerized system for the College of Computer Studies that manages and monitors student sit-in activities, featuring a leaderboard, sessions tracking, and user accounts.</p>
+                            <div class="project-tags">
+                                <span>Monitoring</span>
+                                <span>Database</span>
+                                <span>Full-Stack</span>
+                            </div>
+                            <a href="https://sit-in-monitoring-system-mu.vercel.app/" target="_blank" rel="noopener" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="project-card reveal">
+                        <div class="project-image">
+                            <img src="https://placehold.co/600x400/111a2e/a855f7?text=Portfolio+Website&font=roboto" alt="Portfolio Website">
+                            <div class="project-overlay">
+                                <a href="#home" class="project-cta"><i class="fas fa-code"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Portfolio Website</h3>
+                            <p>This very site - a modern, responsive developer portfolio with smooth animations, a dark techy aesthetic, and clean semantics.</p>
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <a href="#home" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="project-card project-card-placeholder reveal">
+                        <div class="project-image">
+                            <img src="https://placehold.co/600x400/111a2e/6d5cff?text=Next+Project&font=roboto" alt="Next project coming soon">
+                            <div class="project-overlay">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Your Next Project?</h3>
+                            <p>Have an idea you'd like to bring to life? I'm always open to new challenges and collaborations.</p>
+                            <div class="project-tags">
+                                <span>Let's Build It</span>
+                            </div>
+                            <a href="https://github.com/ChristianL18" target="_blank" rel="noopener" class="project-link">Explore GitHub <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="section-tag">Contact</span>
+                    <h2 class="section-title">Get in <span class="gradient-text">touch</span></h2>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info reveal">
+                        <p>Have a project in mind or want to discuss potential opportunities? I'd love to hear from you. Let's build something great together.</p>
+                        <ul class="contact-details">
+                            <li>
+                                <span class="info-icon"><i class="fas fa-envelope"></i></span>
+                                <div>
+                                    <span class="info-label">Email</span>
+                                    <a href="mailto:christianluisgutierrez@gmail.com">christianluisgutierrez@gmail.com</a>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="info-icon"><i class="fas fa-map-marker-alt"></i></span>
+                                <div>
+                                    <span class="info-label">Location</span>
+                                    <span class="info-value">City, Country</span>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="info-icon"><i class="fab fa-github"></i></span>
+                                <div>
+                                    <span class="info-label">GitHub</span>
+                                    <a href="https://github.com/ChristianL18" target="_blank" rel="noopener">github.com/ChristianL18</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <form class="contact-form reveal" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-button">Send Message <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Christian Luis V. Gutierrez. Built with <i class="fas fa-heart"></i> and clean code.</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
