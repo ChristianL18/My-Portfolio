@@ -479,6 +479,10 @@ h1, h2, h3, h4 {
     background: var(--bg-alt);
 }
 
+.education {
+    background: var(--bg);
+}
+
 .skills {
     background: var(--bg);
 }
@@ -603,6 +607,108 @@ h1, h2, h3, h4 {
 .stat-label {
     color: var(--text-muted);
     font-size: 0.95rem;
+}
+
+/* ============ Education Timeline ============ */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 40px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--gradient);
+    border-radius: 2px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -33px;
+    top: 6px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--gradient);
+    border: 3px solid var(--bg);
+    box-shadow: 0 0 0 3px rgba(109, 92, 255, 0.3);
+    z-index: 1;
+}
+
+.timeline-content {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 2rem;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: translateX(8px);
+    border-color: rgba(109, 92, 255, 0.4);
+    box-shadow: var(--shadow);
+}
+
+.timeline-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.8rem;
+    flex-wrap: wrap;
+}
+
+.timeline-date {
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--cyan);
+    letter-spacing: 0.5px;
+}
+
+.timeline-badge {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 4px 12px;
+    border-radius: 50px;
+    background: rgba(34, 211, 238, 0.12);
+    color: var(--cyan);
+    border: 1px solid rgba(34, 211, 238, 0.3);
+}
+
+.timeline-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.3rem;
+}
+
+.timeline-degree {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--indigo);
+    margin-bottom: 0.8rem;
+}
+
+.timeline-description {
+    color: var(--text-muted);
+    font-size: 0.92rem;
+    line-height: 1.7;
 }
 
 /* ============ Skills ============ */
@@ -1039,6 +1145,18 @@ footer i.fa-heart {
         grid-template-columns: repeat(3, 1fr);
     }
 
+    .timeline {
+        padding-left: 35px;
+    }
+
+    .timeline::before {
+        left: 12px;
+    }
+
+    .timeline-dot {
+        left: -30px;
+    }
+
     .skills-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
@@ -1127,6 +1245,28 @@ footer i.fa-heart {
 
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+
+    .timeline {
+        padding-left: 30px;
+    }
+
+    .timeline::before {
+        left: 10px;
+    }
+
+    .timeline-dot {
+        left: -27px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .timeline-content {
+        padding: 1.5rem;
+    }
+
+    .timeline-content h3 {
+        font-size: 1.15rem;
     }
 }
 

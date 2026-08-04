@@ -1,7 +1,6 @@
 // ============ Typing effect ============
 const roles = [
     'Frontend Developer',
-    'Backend Developer',
     'Web Developer',
     'Clean Code Advocate'
 ];
