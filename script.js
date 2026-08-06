@@ -1,3 +1,29 @@
+// ============ Preloader ============
+const preloader = document.getElementById('preloader');
+const preloaderBar = document.getElementById('preloader-bar-fill');
+const preloaderPercent = document.getElementById('preloader-percent');
+
+if (preloader) {
+    document.body.style.overflow = 'hidden';
+
+    let progress = 0;
+    const interval = setInterval(() => {
+        progress += Math.floor(Math.random() * 12) + 4;
+        if (progress >= 100) {
+            progress = 100;
+            clearInterval(interval);
+
+            setTimeout(() => {
+                preloader.classList.add('hidden');
+                document.body.style.overflow = '';
+                window.dispatchEvent(new Event('load'));
+            }, 400);
+        }
+        preloaderBar.style.width = progress + '%';
+        preloaderPercent.textContent = progress + '%';
+    }, 70);
+}
+
 // ============ Typing effect ============
 const roles = [
     'Frontend Developer',
@@ -124,7 +150,9 @@ if (hamburger && navMenu) {
     hamburger.addEventListener('click', () => {
         hamburger.classList.toggle('active');
         navMenu.classList.toggle('active');
-        document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
+        if (window.innerWidth <= 768) {
+            document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
+        }
     });
 
     navMenu.querySelectorAll('.nav-link').forEach(link => {
